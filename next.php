@@ -10,6 +10,33 @@
 
     <h1>Next Page...</h1>
     <a href="index.php">Home Page</a>
+
+    <form method="POST" action="./send.php">
+                      <label>  <input
+                        type="text"
+                        name="name"
+                        oninvalid="setCustomValidity('Please Enter Only Alphabets ')"
+                        onchange="try{setCustomValidity('')}catch(e){}"
+                        pattern="[a-z A-Z]+"
+                        placeholder="Full Name"
+                        required=""
+                        
+                      /></label>
+                      <label><input
+                        oninvalid="setCustomValidity('Please Enter Only Number ')"
+                        onchange="try{setCustomValidity('')}catch(e){}"
+                        pattern="[0-9]+"
+                        type="tel"
+                        name="number"
+                        maxlength="10"
+                        minlength="10"
+                        placeholder="Phone Number"
+                        required=""
+                        
+                      /></label>
+                      
+                      <button  type="submit" name="sub">Submit</button>
+                    </form>
     
 </body>
 </html>
