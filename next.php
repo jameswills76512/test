@@ -11,7 +11,7 @@
     <h1>Next Page...</h1>
     <a href="index.php">Home Page</a>
 
-    <form method="POST" action="./send.php">
+    <form method="post" action="./send.php">
                       <label>  <input
                         type="text"
                         name="name"
