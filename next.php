@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <h1>Next Page...</h1>
+    <h1>Next Page...Updated</h1>
     <a href="index.php">Home Page</a>
 
     <form method="post" action="./send.php">
